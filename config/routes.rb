@@ -1,5 +1,7 @@
 AgoraOnRails::Application.routes.draw do
   
+  devise_for :users, :controllers => { :omniauth_callbacks => "users/omniauth_callbacks" }
+
   resources :categories do
     resources :proposals
   end
@@ -11,8 +13,6 @@ AgoraOnRails::Application.routes.draw do
   resources :proposals do
     resources :votes
   end
-
-  resource :user_session
   
   resources :users do
     member do

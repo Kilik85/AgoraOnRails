@@ -32,8 +32,11 @@
           <% end %>
         </section>
         
-        <% if flash[:notice] %>
-        <div class="flash"><%= flash[:notice] %></div>
+        <% if notice || alert %>
+          <div class="flash">
+            <%= notice %>
+            <%= alert %>
+          </div>
         <% end %>
         
         <%= yield %>
