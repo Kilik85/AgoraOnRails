@@ -8,6 +8,7 @@ gem "inherited_resources"
 gem "dynamic_form"
 gem 'devise', :git => "git://github.com/plataformatec/devise.git"
 gem "oa-oauth", :require => "omniauth/oauth"
+gem 'facebooker', :git => "git://github.com/joren/facebooker.git", :branch => "rails3"
 
 
 group :development, :test do

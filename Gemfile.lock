@@ -1,4 +1,12 @@
 GIT
+  remote: git://github.com/joren/facebooker.git
+  revision: b1481ef1a57b607209ce2beebf9794481db80412
+  branch: rails3
+  specs:
+    facebooker (1.0.64)
+      json_pure (>= 1.0.0)
+
+GIT
   remote: git://github.com/plataformatec/devise.git
   revision: ed30114bd8700c7e5c44b80ceeed39e4977d13e5
   specs:
@@ -182,6 +190,7 @@ DEPENDENCIES
   capybara
   devise!
   dynamic_form
+  facebooker!
   heroku_san
   inherited_resources
   launchy

@@ -44,4 +44,10 @@ class UsersController < ApplicationController
     flash[:notice] = "Has destituido a tu portavoz."
     redirect_to spokesman
   end
+  
+  def publish
+    fb_session = Facebooker::Session.new(ENV['FACEBOOK_PDI_APP_ID'], ENV['FACEBOOK_PDI_APP_SECRET'])
+    fb_user = Facebooker::User.new(7106254, fb_session)
+    fb_user.publish_to(fb_user, :message => "Hola desde AgoraOnRails")
+  end
 end

@@ -20,6 +20,7 @@ AgoraOnRails::Application.routes.draw do
       put 'discharge_as_spokesman'
       get 'choose_as_spokesman'
       get 'discharge_as_spokesman'
+      get 'publish'
     end
   end
     
